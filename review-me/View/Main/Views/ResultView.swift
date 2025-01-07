@@ -11,8 +11,6 @@ struct ResultView: View {
     var employee: Employee
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("Hello: \(employee.name ?? "Unknown")")
-                .font(.headline)
             Text(employee.relationships.isEmpty ? "You have no one to review !!" : "Could you review:")
                 .font(.subheadline)
             ForEach(employee.relationships) { relationship in

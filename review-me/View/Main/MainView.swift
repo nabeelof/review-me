@@ -9,8 +9,9 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject private var viewModel = MainViewModel()
-    @State private var selectedEmployee: Employee?
-
+    let employeeIndex = 1 // for testing: change this to try other reviewers
+    @State var showResult = false
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -18,26 +19,27 @@ struct MainView: View {
                     ProgressView("Loading ...")
                         .progressViewStyle(CircularProgressViewStyle())
                 } else {
-                    Picker("Select Employee", selection: $selectedEmployee) {
-                        Text("Please Select").tag(nil as Employee?)
-                        ForEach(viewModel.employees) { employee in
-                            Text(employee.name ?? "Unknown").tag(employee as Employee?)
+                    VStack {
+                        Text("Hello: \(viewModel.employees[employeeIndex].name ?? "Unknown")")
+                            .font(.title).bold()
+                        if showResult {
+                            ResultView(employee: viewModel.employees[employeeIndex])
+                        } else {
+                            Button(action: {
+                                showResult = true
+                            }) {
+                                Text("Reveal Names")
+                                    .font(.headline)
+                                    .padding()
+                                    .background(Color.black)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                            }.padding()
                         }
-                    }
-                    .pickerStyle(MenuPickerStyle())
-                    .padding()
-
-                    if let employee = selectedEmployee {
-                        ResultView(employee: employee)
-                    } else {
-                        Text("Select an employee to view reviewees.")
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
-                            .padding()
                     }
                 }
             }
-            .navigationTitle("Review Me")
+            .navigationTitle("Review")
             .onAppear {
                 viewModel.fetchCSVData()
             }
