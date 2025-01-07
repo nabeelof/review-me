@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		BD1D40942D2C7841009CB6C1 /* review_meApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D40932D2C7841009CB6C1 /* review_meApp.swift */; };
-		BD1D40962D2C7841009CB6C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D40952D2C7841009CB6C1 /* ContentView.swift */; };
+		BD1D40962D2C7841009CB6C1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D40952D2C7841009CB6C1 /* MainView.swift */; };
 		BD1D40982D2C7843009CB6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1D40972D2C7843009CB6C1 /* Assets.xcassets */; };
 		BD1D409B2D2C7843009CB6C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1D409A2D2C7843009CB6C1 /* Preview Assets.xcassets */; };
 		BD1D40A52D2C7844009CB6C1 /* review_meTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D40A42D2C7844009CB6C1 /* review_meTests.swift */; };
 		BD1D40AF2D2C7844009CB6C1 /* review_meUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D40AE2D2C7844009CB6C1 /* review_meUITests.swift */; };
 		BD1D40B12D2C7844009CB6C1 /* review_meUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D40B02D2C7844009CB6C1 /* review_meUITestsLaunchTests.swift */; };
+		BD1D40C12D2C7CA0009CB6C1 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D40C02D2C7CA0009CB6C1 /* Employee.swift */; };
+		BD1D40C32D2C7D44009CB6C1 /* EmployeeRelationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D40C22D2C7D44009CB6C1 /* EmployeeRelationship.swift */; };
+		BD1D40C52D2C7F02009CB6C1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D40C42D2C7F02009CB6C1 /* MainViewModel.swift */; };
+		BD1D40C92D2C8649009CB6C1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D40C82D2C8649009CB6C1 /* Constants.swift */; };
+		BD1D40CD2D2CA621009CB6C1 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D40CC2D2CA621009CB6C1 /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		BD1D40902D2C7841009CB6C1 /* review-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "review-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1D40932D2C7841009CB6C1 /* review_meApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = review_meApp.swift; sourceTree = "<group>"; };
-		BD1D40952D2C7841009CB6C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD1D40952D2C7841009CB6C1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BD1D40972D2C7843009CB6C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD1D409A2D2C7843009CB6C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD1D40A02D2C7843009CB6C1 /* review-meTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "review-meTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,11 @@
 		BD1D40AA2D2C7844009CB6C1 /* review-meUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "review-meUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1D40AE2D2C7844009CB6C1 /* review_meUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = review_meUITests.swift; sourceTree = "<group>"; };
 		BD1D40B02D2C7844009CB6C1 /* review_meUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = review_meUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD1D40C02D2C7CA0009CB6C1 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		BD1D40C22D2C7D44009CB6C1 /* EmployeeRelationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRelationship.swift; sourceTree = "<group>"; };
+		BD1D40C42D2C7F02009CB6C1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		BD1D40C82D2C8649009CB6C1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BD1D40CC2D2CA621009CB6C1 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,11 @@
 		BD1D40922D2C7841009CB6C1 /* review-me */ = {
 			isa = PBXGroup;
 			children = (
+				BD1D40BF2D2C7C7F009CB6C1 /* Model */,
+				BD1D40BD2D2C7C57009CB6C1 /* View */,
+				BD1D40CA2D2CA5A9009CB6C1 /* ViewModel */,
+				BD1D40C62D2C852D009CB6C1 /* Utils */,
 				BD1D40932D2C7841009CB6C1 /* review_meApp.swift */,
-				BD1D40952D2C7841009CB6C1 /* ContentView.swift */,
 				BD1D40972D2C7843009CB6C1 /* Assets.xcassets */,
 				BD1D40992D2C7843009CB6C1 /* Preview Content */,
 			);
@@ -125,6 +138,56 @@
 				BD1D40B02D2C7844009CB6C1 /* review_meUITestsLaunchTests.swift */,
 			);
 			path = "review-meUITests";
+			sourceTree = "<group>";
+		};
+		BD1D40BD2D2C7C57009CB6C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D40BE2D2C7C61009CB6C1 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD1D40BE2D2C7C61009CB6C1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D40CB2D2CA5DC009CB6C1 /* Views */,
+				BD1D40952D2C7841009CB6C1 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BD1D40BF2D2C7C7F009CB6C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D40C02D2C7CA0009CB6C1 /* Employee.swift */,
+				BD1D40C22D2C7D44009CB6C1 /* EmployeeRelationship.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD1D40C62D2C852D009CB6C1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D40C82D2C8649009CB6C1 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BD1D40CA2D2CA5A9009CB6C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D40C42D2C7F02009CB6C1 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD1D40CB2D2CA5DC009CB6C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D40CC2D2CA621009CB6C1 /* ResultView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +320,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD1D40962D2C7841009CB6C1 /* ContentView.swift in Sources */,
+				BD1D40C52D2C7F02009CB6C1 /* MainViewModel.swift in Sources */,
+				BD1D40962D2C7841009CB6C1 /* MainView.swift in Sources */,
+				BD1D40C12D2C7CA0009CB6C1 /* Employee.swift in Sources */,
 				BD1D40942D2C7841009CB6C1 /* review_meApp.swift in Sources */,
+				BD1D40C32D2C7D44009CB6C1 /* EmployeeRelationship.swift in Sources */,
+				BD1D40CD2D2CA621009CB6C1 /* ResultView.swift in Sources */,
+				BD1D40C92D2C8649009CB6C1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +492,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"review-me/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Review Me";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +521,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"review-me/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Review Me";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
